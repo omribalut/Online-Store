@@ -1,0 +1,8 @@
+
+    <td>{{cartProduct.name}}</td>
+    <td class="amount">{{cartProduct.amount}}</td>
+    <td class="totalAmount">{{cartProduct.totalPrice.toFixed(2) | currency}}</td>
+    <td><input type="number" name = "amount" min="1" max="100" [(ngModel)]="amount" required step="1" oninput="validity.valid||(value='');">&nbsp;
+    <button mat-mini-fab color="primary" (click)="updateCartProduct(cartProduct._id)"><mat-icon>edit</mat-icon></button></td>
+    <td><button mat-mini-fab color="warn" (click)="deleteProductFromCart(cartProduct.productId)"><mat-icon>delete</mat-icon></button></td>
+

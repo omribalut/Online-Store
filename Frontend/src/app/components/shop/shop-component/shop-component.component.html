@@ -1,0 +1,20 @@
+<mat-drawer-container >
+  <mat-drawer [(opened)]="opened" mode="side">
+  <div class = 'cart'>
+      <app-cart></app-cart>
+  </div>
+</mat-drawer>
+<mat-drawer-content>
+  <div class = 'list'>
+          <button type="button" mat-fab color="primary" (click)="opened=!opened">
+          <mat-icon>shopping_cart</mat-icon>
+          </button>
+          <app-products-list></app-products-list>
+  </div>
+</mat-drawer-content>
+  </mat-drawer-container>
+  
+  
+  
+  
+

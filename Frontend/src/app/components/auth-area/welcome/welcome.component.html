@@ -1,0 +1,79 @@
+<div class="main">
+
+    <div class="register">
+        <app-register *ngIf="!flag && !shopflag"></app-register>
+        <app-login *ngIf="flag && !shopflag" (flagChanger)="test($event)"></app-login>
+        <br>
+        <br>
+        <span *ngIf="!flag && !shopflag" >Already Have An Account?</span>
+        <br>
+        <br>
+        <button mat-raised-button color="primary" (click)="handlerFlag()" *ngIf="!flag && !shopflag">Login</button>
+        <button routerLink="/shop" mat-raised-button color="primary" *ngIf="shopflag && user.role==='User'">To Shop</button>
+        <button routerLink="/admin" mat-raised-button color="primary" *ngIf="shopflag && user.role==='Admin'">Show Admin Screen</button>
+    </div>
+
+    <div class="buy-here">
+        <h2>About Us</h2>
+        <span>
+            <div>
+                ▪ Mega Market is Israel's English online supermarket delivery service covering all 
+                of Israel and open 24 hours a day, 6 days a week to serve our English and French speaking communities
+                Online-Store is not a physical supermarket or store.
+            </div>
+            
+            <div>
+                ▪ We are a service that orders and facilitates delivery from existing kosher supermarkets 
+                all over Israel to make ordering in your language easy for you.
+            </div>
+            
+            <div>
+                ▪ Online-Store makes online grocery delivery and shopping fast and easy.
+            </div>
+            
+            <div>
+                ▪ Quality and convenience from the comfort of your own home.
+            </div>
+            
+            <div>
+                ▪ Your orders are picked on the same day as delivery, ensuring freshness.
+            </div>
+            
+            <div>
+                ▪ As we grow, we commit to bringing you a wide range of quality products.
+            </div>
+            
+            <div>
+                ▪ From organic produce, farm fresh products, organic foods, premium butcher meats, fresh fish from Israel's finest suppliers,
+                imported goods that remind you of home or vacation to innovative ways to put fresh foods and recipes on your table.
+            </div>
+            
+            <div>
+                ▪ Especially in times like these, our mission is to deliver quickly, quality goods for your convenience to make your day that much easier.
+            </div>
+        </span>
+        <div class="imageStore">
+            <img src="../../../../assets/store.jpg">
+        </div>
+      
+    </div>
+    <div class="more-info">
+        <br />
+        <div class="imageStore">
+            <img src="../../../../assets/productsInStore.jpg">
+        </div>
+        <br />
+        <p>Amount of products available in our store: {{productsLen}}</p>
+        <br />
+        <p>Amount of submitted orders in our store: {{ordersLen}}</p>
+        <br />
+        <p *ngIf="shopflag">Your cart is from:  {{cart?.date| date}} <br />
+            You have: {{cartLen}} items in the cart <br />
+        your last purchase was on:{{lastOrder?.orderDate | date}} <br />
+        Welcome {{user?.firstName}}
+        </p>
+        <h1 *ngIf="newShopper <= 1 && shopflag">This is your first purchase, Welcome!</h1>
+    </div>
+
+    
+</div>

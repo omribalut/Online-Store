@@ -1,0 +1,50 @@
+.main {
+    height: 100%;
+    width: 99%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
+    border: none;
+    
+}
+
+div {
+    margin: 10px;
+}
+
+.buy-here{
+    flex-grow: 1;
+    width: 15%;
+    font-size: larger;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    padding-left: 25px;
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+}
+
+.register{
+    flex-grow: 1;
+    width: 10%;
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgb(236, 234, 255) 100.2% );
+}
+
+.more-info{
+    width: 5%;
+    flex-grow: 1;
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+}
+mat-icon{
+    font-size: small;
+}
+h2{
+    text-align: center;
+}
+img{
+    width: 70%;
+    border-radius: 15px;
+}
+.imageStore{
+    border: none;
+    text-align: center
+}

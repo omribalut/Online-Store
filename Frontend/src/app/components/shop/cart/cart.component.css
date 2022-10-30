@@ -1,0 +1,47 @@
+div {
+    font-size: larger;
+}
+
+
+table{
+    display: inline-block;
+    overflow: auto;
+    font-size: larger;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px;
+    width: 95%;
+ }
+td{
+    border:none;
+    border-radius: 8px;
+ }
+th{
+    color:rgb(233, 233, 233);
+}
+tr:nth-child(even) {background-image: radial-gradient( circle 993px at 0.5% 50.5%, rgb(98 131 203 / 37%) 0%, rgb(247 250 255) 100.2% );}
+
+tbody{
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%, rgba(109, 154, 251, 0.37) 0%, rgb(247 250 255) 100.2% );
+}
+thead{
+    background-color: rgb(1, 78, 98);
+}
+.totalPrice{
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%, rgb(98 131 203 / 37%) 0%, rgb(247 250 255) 100.2% );
+    position: relative;
+    width: 40%;
+    display: inline-block;
+    top: 15px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.clearCart{
+    font-size: 22px;
+}
+
+.openClose{
+        margin-right: 25px;
+}
+

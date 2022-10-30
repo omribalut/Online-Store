@@ -1,0 +1,7 @@
+Apple....1x....5.9$
+Coca-Cola....1x....4.95$
+Milk....1x....3.58$
+Cucumber....1x....2.85$
+
+
+Total price:17.28$

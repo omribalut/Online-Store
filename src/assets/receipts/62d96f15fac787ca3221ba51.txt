@@ -1,0 +1,7 @@
+Coca-Cola....1x....4.95$
+Milk....15x....75$
+Tomato....10x....28.5$
+Water....10x....25$
+
+
+Total price:133.45$

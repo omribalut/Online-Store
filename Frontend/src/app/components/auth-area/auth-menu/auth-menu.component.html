@@ -1,0 +1,14 @@
+<div>
+
+    <ng-container *ngIf="!user">
+        <span>Hello Guest</span>
+    </ng-container>
+
+    <ng-container *ngIf="user">
+        <mat-icon>person</mat-icon>
+        <span> Hello {{user.firstName}} {{user.lastName}}</span>
+        <span> | </span>
+        <a routerLink="/logout">Logout</a>
+    </ng-container>
+
+</div>

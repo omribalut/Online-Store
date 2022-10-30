@@ -1,0 +1,37 @@
+
+        <br>
+<br>
+<div>
+    <button class="btn btn-danger" (click)="clearCart()">Clear Cart <mat-icon class="clearCart">shopping_cart</mat-icon></button>
+</div>
+    <br>
+    <br>
+    <br>
+    <table>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Amount&nbsp;&nbsp;</th>
+            <th>Total</th>
+            <th>Change Amount</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr app-cart-details-row *ngFor="let c of cartDetails"  [cartProduct]="c"></tr>
+    </tbody>
+     
+</table>
+<div class="totalPrice">
+    Total Price: {{totalPrice | currency}}
+</div>
+<br>
+<br>
+<br>
+<div>
+    <a routerLink="/order"><button class="btn btn-success">Order</button></a>
+</div>
+
+
+
+

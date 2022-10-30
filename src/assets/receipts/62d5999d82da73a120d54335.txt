@@ -1,0 +1,5 @@
+Cucumber....10x....28.5$
+Tomato....20x....57$
+
+
+Total price:85.5$

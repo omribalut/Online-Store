@@ -1,0 +1,8 @@
+Apple....1x....5.9$
+Pepsi....1x....4.5$
+Water....1x....2.5$
+Bread....1x....9.8$
+Egges....1x....10$
+
+
+Total price:32.7$

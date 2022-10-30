@@ -1,0 +1,8 @@
+Coca Cola....1x....3$
+Cucumber....1x....2.85$
+Tomato....1x....2.85$
+Blueberrys....1x....6.5$
+Strawberry....1x....5.5$
+
+
+Total price:20.7$

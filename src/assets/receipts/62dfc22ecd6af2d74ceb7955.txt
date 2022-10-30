@@ -1,0 +1,6 @@
+Banana....1x....2.9$
+Apple....2x....11.8$
+Milk....1x....6.9$
+
+
+Total price:21.6$

@@ -1,0 +1,37 @@
+.box {
+	width: 200px;
+    height: 280px;
+    padding-right: 8px;
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+    background: linear-gradient(65deg, rgb(215, 222, 245) 13%, rgb(209, 219, 250) 51%, rgb(255, 255, 255) 89%);
+    font-size: 150%;
+    border: none;
+    position: relative;
+}
+.price{
+    color: rgb(0, 74, 143);
+}
+img {
+    width: 135px;
+    background-color: rgb(255, 255, 255);
+    height: 135px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    vertical-align: middle;
+}
+
+.clicked{
+    position: absolute;
+    bottom: 15px;
+}
+
+.btn-outline-danger{
+    margin-top: 10px;
+}
+
+
+

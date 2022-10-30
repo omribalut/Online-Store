@@ -1,0 +1,13 @@
+input{
+    width: 50%;
+    border-radius: 5px;
+ }
+ button{
+    border: none;
+ }
+ .totalAmount{
+   width: 10%;
+ }
+ .amount{
+   width: 10%;
+ }
